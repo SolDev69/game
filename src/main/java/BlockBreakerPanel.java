@@ -53,10 +53,7 @@ public class BlockBreakerPanel extends JPanel implements KeyListener {
                 ba.dx *= -1;
             if (ba.y < 0 || ba.intersects(paddle))
                 ba.dy *= -1;
-            if (ba.y < 0) {
-                JOptionPane.showMessageDialog(Main.frame, "Game over!");
-                System.exit(1);
-            }
+            // TODO: Game death if ball is under canvas
             ba.y += ba.dy;
             for (Block b : blocks) {
                 if((b.left.intersects(ba) || b.right.intersects(ba)) && !b.destroyed) {

@@ -3,9 +3,8 @@ import javax.swing.*;
 import static javax.swing.JFrame.*;
 
 public class Main {
-    static JFrame frame = new JFrame("Block Breaker");
     public static void main(String[] args) {
-
+        JFrame frame = new JFrame("Block Breaker");
 
         Logger.log("hello, world!");
 
